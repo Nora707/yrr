@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Admin</title>
+	<link type="text/css" rel="stylesheet" href="admin.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<header id="headerAndlogo"><img src="yellowroad-logo-yellow.png" alt="logo" /></header>
+<div>
+	<table>
+		<tr>
+
+		</tr>
+	</table>
+</div>
+
+<div>
+	<table>
+		<thead>
+			<tr>
+				<th>Szűrés</th>
+				<th><input type="text"/></th>
+				<th><input type="text"/></th>
+				<th><input type="text"/></th>
+				<th><input type="number"/></th>
+				<th>
+					<select id="schoolSelector">
+						<option value="university">Főiskola/Egyetem</option>
+						<option value="highSchool">Érettségi</option>
+						<option value="other">Egyéb</option>
+				  </select>
+				</th>
+				<th>
+					<select id="englishSelector">
+						<option value="engB1">Alapfok</option>
+						<option value="engB2">Középfok</option>
+						<option value="engC1">Felsőfok</option>
+					</select>
+				</th>
+				<th>
+					<select id="ageSelector">
+						<option value="25AndDown">18-25 év</option>
+						<option value="between26And35">26-35 év</option>
+						<option value="au35AndUpdi">35 év felett</option>
+					</select>
+				</th>
+				<th>
+					<select id="newsLetterSelector">
+						<option value="off">Nem kér</option>
+						<option value="on">Kér hírlevelet</option>
+
+					</select>
+				</th>
+			</tr>
+			<tr>
+				<th>id</th>
+				<th>Vezetéknév</th>
+				<th>Keresztnév</th>
+				<th>E-mail cím</th>
+				<th>Telefonszám</th>
+				<th>Iskolai végzettség</th>
+				<th>Angol nyelvtudás</th>
+				<th>Életkor</th>
+				<th>Hírlevél</th>
+			</tr>
+		</thead>
+		
+		<tbody id="tableBodyForUsers">
+					<tr id="row">
+				<td>1</td>
+				<td>Kovács</td>
+				<td>Eszter</td>
+				<td>sdf@sdgf.hu</td>
+				<td>Telefonszám</td>
+				<td>Főiskola/Egyetem</td>
+				<td>Alapfok</td>
+				<td>26-35 év</td>
+				<td></td>
+			</tr>
+								<tr>
+				<td>2</td>
+				<td>Vezetéknév</td>
+				<td>Áva</td>
+				<td>swewqef@sdgf.hu</td>
+				<td>Telefonszám</td>
+				<td>Érettségi</td>
+				<td>Középfok</td>
+				<td>18-25 év</td>
+				<td>on</td>
+			</tr>
+								<tr>
+				<td>3</td>
+				<td>NAElngdf</td>
+				<td>Ádám</td>
+				<td>ntee@sdgf.hu</td>
+				<td>Telefonszám</td>
+				<td>Egyéb</td>
+				<td>Felsőfok</td>
+				<td>35 év felett</td>
+				<td>on</td>
+			</tr>
+								<tr>
+				<td>4</td>
+				<td>Tóth</td>
+				<td>Kovács</td>
+				<td>gtnh@sdgf.hu</td>
+				<td>Telefonszám</td>
+				<td>Főiskola/Egyetem</td>
+				<td>Felsőfok</td>
+				<td>26-35 év</td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+	<script type="text/javascript" >
+	var schoolSelector=document.querySelector('#schoolSelector');
+	
+	schoolSelector.addEventListener('change', schoolFilter);
+	
+	function schoolFilter(){
+		console.log('school');
+		var schoolSelectorValue=schoolSelector.value;
+		console.log(schoolSelectorValue);
+		
+		
+	}
+	
+	</script>
+</body>
+</html>

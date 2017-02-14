@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Admin</title>
+	<link type="text/css" rel="stylesheet" href="admin.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<header id="headerAndlogo"><img src="yellowroad-logo-yellow.png" alt="logo" /></header>
+<!-- <div>
+	<table>
+		<tr>
+
+		</tr>
+	</table>
+</div> -->
+
+<div>
+<!-- 	<div>Rendezés: 
+		<select id="sorting" >
+			<option value="id">id</option>
+			<option value="lastName">Vezetéknév</option>
+			<option value="firstName">Keresztnév</option>
+			<option value="email">E-mail cím</option>
+			<option value="education">Iskolai végzettség</option>
+			<option value="englishLevel">Angol nyelvtudás</option>
+			<option value="age">Életkor</option>
+			<option value="newsLetter">Hírlevél</option>
+			<option value="phoneNumbereducation">Telefonszám</option>
+		</select>
+	</div> -->
+	<table>
+		<thead>
+				<th>
+					<input type="text" id="id" name="id" class="filter" /><span class="sortingArrows" ><button class="up" >▼</button><button  class="down">▲</button>
+					</span>
+				</th>
+				<th>
+					<input type="text" id="lastName" name="lastName" class="filter" /><span class="sortingArrows" ><button class="down">▼</button><button class="up">▲</button>
+					</span>
+				</th>
+				<th>
+					<input type="text" id="firstName" name="firstName"  class="filter"/><span class="sortingArrows"><button class="down">▼</button><button class="up">▲</button>
+					</span>
+				</th>
+				<th>
+					<input type="text" id="email" name="email" class="filter"   /><span class="sortingArrows" ><button class="down">▼</button><button class="up">▲</button>
+					</span>
+				</th>
+				<th>
+					<select id="schoolSelector" name="education"  class="filter" >
+						<option value="noFilter">Nincs szűrés</option>
+						<option value="Főiskola/Egyetem">Főiskola/Egyetem</option>
+						<option value="Érettségi">Érettségi</option>
+						<option value="Egyéb">Egyéb</option></select><span class="sortingArrows" ><button class="down">▼</button><button class="up">▲</button></span>
+				</th>
+				<th>
+					<select id="englishSelector" name="englishLevel"  class="filter" >
+						<option value="noFilter">Nincs szűrés</option>
+						<option value="Alapfok">Alapfok</option>
+						<option value="Középfok">Középfok</option>
+						<option value="Felsőfok">Felsőfok</option></select><span class="sortingArrows" ><button class="down">▼</button><button class="up">▲</button></span>
+				</th>
+				<th>
+					<select id="ageSelector" name="age"  class="filter" >
+						<option value="noFilter">Nincs szűrés</option>
+						<option value="18-25 év">18-25 év</option>
+						<option value="26-35 év">26-35 év</option>
+						<option value="35 év felett">35 év felett</option></select><span class="sortingArrows" ><button class="down">▼</button><button class="up">▲</button></span>
+				</th>
+				<th>
+					<select id="newsLetterSelector" name="newsLetter"  class="filter" >
+						<option value="noFilter">Nincs szűrés</option>
+						<option value="off">Nem kér</option>
+						<option value="on">Kér hírlevelet</option></select><span class="sortingArrows" ><button class="down">▼</button><button class="up">▲</button></span>
+				</th>
+				<th><input type="number" id="phone"   name="phone" class="filter" /><span class="sortingArrows" ><button class="down">▼</button><button class="up">▲</span></th>
+			</tr>
+			<tr>
+				<th>id</th>
+				<th>Vezetéknév</th>
+				<th>Keresztnév</th>
+				<th>E-mail cím</th>
+				<th>Iskolai végzettség</th>
+				<th>Angol nyelvtudás</th>
+				<th>Életkor</th>
+				<th>Hírlevél</th>
+				<th>Telefonszám</th>
+			</tr>
+		</thead>
+		
+		<tbody id="tableBodyForUsers">
+
+		</tbody>
+	</table>
+</div>
+	<script type="text/javascript" src="admin.js">
+	</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+body{
+	background-color:ghostwhite;
+	font-family:"Montserrat";
+	font-size:1vw;
+}
+tbody tr:nth-child(even){
+	background-color:#d8d8d8;
+}
+table{
+	border: 1px solid;
+	padding:2px;
+	margin:3px auto;
+	width:70%;
+}
+td{
+
+	margin-bottom:5px;
+}
+th{
+	border-left:1px solid;
+	border-right:1px solid;
+}
+th:children{
+	display:inline-block;
+}
+header, thead{
+	background-color:#3C3C3C;
+	color:white;
+	max-height:50px;
+}
+img{
+	max-height:50px;
+}
+tr:hover{
+
+	font-weight:bold;
+}
+.sortingArrows button{
+	width:15px;
+	display:inline;
+	background-color:#3C3C3C;
+	color:#FFE221;
+	font-size:0,7vw;
+	padding:0;
+	
+}
+.sortingArrows button img{
+	max-width:100%;
+	display:inline;
+	background-color:#3C3C3C;
+	
+}
+input{
+	max-width:10vw;
+}
